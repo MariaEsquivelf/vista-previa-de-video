@@ -1,4 +1,7 @@
-var video = document.getElementById('myVideo');
-function over(element){
-    element.play();
+function over(video){
+    video.play();
+    video.muted = true;
+}
+function out(video){
+    video.pause();
 }
